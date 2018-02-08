@@ -10,15 +10,15 @@ function dataHandling2() {
   // Full Array
   input.splice(2, 0, 'Elsharawy', 'Provinsi');
   input.splice(7, 0, 'Pria', 'SMA Internasional Metro');
-  var namaLengkap = input.slice(1, 3);
-  var fullName = namaLengkap.join(' ');
-  input.splice(1, 1);
-  input.splice(1, 1, fullName);
-  var tempatLahir = input.slice(2, 4);
-  var bod = tempatLahir.join(' ');
-  input.splice(2, 2);
-  input.splice(2, 0, bod);
-  console.log(input);
+    var namaLengkap = input.slice(1, 3);
+    var fullName = namaLengkap.join(' ');
+    input.splice(1, 1);
+    input.splice(1, 1, fullName);
+      var tempatLahir = input.slice(2, 4);
+      var bod = tempatLahir.join(' ');
+      input.splice(2, 2);
+      input.splice(2, 0, bod);
+        console.log(input);
 
   var tanggal = input.splice(3, 1);
   var date = tanggal[0].split('/');
@@ -32,57 +32,58 @@ function dataHandling2() {
 
   // Bulan Lahir
   var month = Number(date[2]);
+  var monthS = "";
   switch (month) {
     case 1: {
-      console.log('Januari');
+      monthS = 'Januari';
       break;
     }
     case 2: {
-      console.log('Februari');
+      monthS = 'Februari';
       break;
     }
     case 3: {
-      console.log('Maret');
+      monthS = 'Maret';
       break;
     }
     case 4: {
-      console.log('April');
+      monthS = 'April';
       break;
     }
     case 5: {
-      console.log('Mei');
+      monthS = 'Mei';
       break;
     }
     case 6: {
-      console.log('Juni');
+      monthS = 'Juni';
       break;
     }
     case 7: {
-      console.log('Juli');
+      monthS = 'Juli';
       break;
     }
     case 8: {
-      console.log('Agustus');
+      monthS = 'Agustus';
       break;
     }
     case 9: {
-      console.log('September');
+      monthS = 'September';
       break;
     }
     case 10: {
-      console.log('Oktober');
+      monthS = 'Oktober';
       break;
     }
     case 11: {
-      console.log('November');
+      monthS = 'November';
       break;
     }
     case 12: {
-      console.log('Desember');
+      monthS = 'Desember';
       break;
     }
     default: {
-      console.log('ga jadi');
+      monthS = 'bulan apa ini?';
       break;
     }
   }
